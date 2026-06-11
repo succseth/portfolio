@@ -68,6 +68,17 @@ function type() {
 
 setTimeout(type, 1400);
 
+// ── READ MORE ─────────────────────────────────────────────
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const more = btn.previousElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    more.hidden = expanded;
+    btn.setAttribute('aria-expanded', String(!expanded));
+    btn.textContent = expanded ? 'Read more' : 'Show less';
+  });
+});
+
 // ── SKILLS TABS (mobile) ──────────────────────────────────
 const skillsTabs = document.querySelectorAll('.skills-tab');
 const skillCards = document.querySelectorAll('.skill-card');

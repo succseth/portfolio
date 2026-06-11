@@ -492,10 +492,10 @@ img { display: block; max-width: 100%; }
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 30px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0;
   transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s var(--ease);
   box-shadow: var(--shadow-card);
 }
@@ -506,15 +506,33 @@ img { display: block; max-width: 100%; }
   transform: translateY(-6px);
 }
 
+.project-preview-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg-surface);
+  flex-shrink: 0;
+}
+
+.project-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.5s var(--ease);
+}
+
+.project-card:hover .project-preview {
+  transform: scale(1.04);
+}
+
 .project-card-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.project-icon-wrap {
-  font-size: 2.2rem;
-  line-height: 1;
+  padding: 22px 24px 0;
+  gap: 12px;
 }
 
 .project-links {
@@ -540,23 +558,52 @@ img { display: block; max-width: 100%; }
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
 }
 
-.project-desc {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.7;
+.project-desc-wrap {
+  padding: 14px 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   flex: 1;
 }
+
+.project-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.project-desc-more {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-family: 'Fira Code', monospace;
+  cursor: pointer;
+  padding: 6px 0 0;
+  text-align: left;
+  transition: opacity 0.2s;
+}
+
+.read-more-btn:hover { opacity: 0.75; }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 4px;
+  padding: 14px 24px 24px;
+  margin-top: auto;
 }
 
 .p-tag {
@@ -603,7 +650,13 @@ img { display: block; max-width: 100%; }
   background: var(--bg-surface);
 }
 
-.contact-item-icon { font-size: 1.5rem; flex-shrink: 0; }
+.contact-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent);
+}
 
 .contact-item-label {
   font-size: 0.75rem;

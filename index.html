@@ -123,8 +123,11 @@
       <div class="projects-grid">
 
         <article class="project-card reveal">
+          <div class="project-preview-wrap">
+            <img src="images/preview-weather.jpg" class="project-preview" alt="Weather Dashboard preview" loading="lazy">
+          </div>
           <div class="project-card-top">
-            <div class="project-icon-wrap">🌤️</div>
+            <h3 class="project-title">Weather Dashboard</h3>
             <div class="project-links">
               <a href="projects/weather-dashboard/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -134,12 +137,13 @@
               </a>
             </div>
           </div>
-          <h3 class="project-title">Weather Dashboard</h3>
-          <p class="project-desc">
-            Real-time weather app showing live conditions, a 7-day forecast, humidity, and
-            wind speed for any city worldwide. Supports geolocation and °C/°F toggle.
-            Zero API key required.
-          </p>
+          <div class="project-desc-wrap">
+            <p class="project-desc">The dark UI uses a deep navy palette to reduce eye strain, letting the animated weather icons pop. Inter was chosen for its exceptional legibility at small sizes, since weather data needs to be readable at a glance.</p>
+            <div class="project-desc-more" hidden>
+              <p>The card layout groups related stats (humidity, wind, feels-like) into a single visual unit, reducing the cognitive load when scanning multiple values at once. The cyan accent color signals interactivity and references the water and sky theme of the app. Skeleton loaders hold the card layout in place during API calls, preventing layout shift and making the app feel fast even before data arrives. The unit toggle was placed in the header rather than near each reading to keep the data area clean and uncluttered.</p>
+            </div>
+            <button class="read-more-btn" aria-expanded="false">Read more</button>
+          </div>
           <div class="project-tags">
             <span class="p-tag">HTML</span>
             <span class="p-tag">CSS</span>
@@ -149,49 +153,27 @@
         </article>
 
         <article class="project-card reveal">
-          <div class="project-card-top">
-            <div class="project-icon-wrap">✅</div>
-            <div class="project-links">
-              <a href="projects/task-manager/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="https://github.com/succseth/portfolio" target="_blank" rel="noopener" class="project-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
+          <div class="project-preview-wrap">
+            <img src="images/preview-shinetheway.jpg" class="project-preview" alt="Shine The Way Daycare preview" loading="lazy">
           </div>
-          <h3 class="project-title">Task Manager App</h3>
-          <p class="project-desc">
-            Full-featured productivity app with task creation, priority levels (High/Medium/Low),
-            category tagging, and smart filtering. All data persists via localStorage
-            — nothing lost on refresh.
-          </p>
-          <div class="project-tags">
-            <span class="p-tag">HTML</span>
-            <span class="p-tag">CSS</span>
-            <span class="p-tag">JavaScript</span>
-            <span class="p-tag">LocalStorage</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
           <div class="project-card-top">
-            <div class="project-icon-wrap">✨</div>
+            <h3 class="project-title">Shine The Way Daycare</h3>
             <div class="project-links">
               <a href="projects/shinetheway/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
               <a href="https://github.com/succseth/shinethewaycpt" target="_blank" rel="noopener" class="project-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 0 .192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               </a>
             </div>
           </div>
-          <h3 class="project-title">Shine The Way Daycare</h3>
-          <p class="project-desc">
-            A multi-page website for a Cape Town Christian school featuring admissions,
-            programs, facilities, and a contact page. Built with clean HTML and CSS
-            with a warm, welcoming design.
-          </p>
+          <div class="project-desc-wrap">
+            <p class="project-desc">A warm cream and sky-blue palette was chosen to signal safety, trust, and care. The hero uses a two-column layout to keep the primary booking CTA visible above the fold without pushing the photography off screen.</p>
+            <div class="project-desc-more" hidden>
+              <p>The rounded font style reinforces the approachable, child-friendly tone without feeling unprofessional. The primary "Book a Visit" button uses a solid blue fill to clearly stand apart from the outlined "Contact Us" secondary action. Reducing the contrast on secondary CTAs lowers the commitment pressure for undecided visitors. Real photography of children learning was used over illustrations because authentic imagery builds faster emotional trust with parents. A minimal top navigation keeps the layout clean and guides attention toward the single most important conversion action.</p>
+            </div>
+            <button class="read-more-btn" aria-expanded="false">Read more</button>
+          </div>
           <div class="project-tags">
             <span class="p-tag">HTML</span>
             <span class="p-tag">CSS</span>
@@ -200,53 +182,31 @@
         </article>
 
         <article class="project-card reveal">
+          <div class="project-preview-wrap">
+            <img src="images/preview-jrshomecleaning.jpg" class="project-preview" alt="JR's Home Cleaning preview" loading="lazy">
+          </div>
           <div class="project-card-top">
-            <div class="project-icon-wrap">🧹</div>
+            <h3 class="project-title">JR's Home Cleaning</h3>
             <div class="project-links">
               <a href="projects/jrshomecleaning/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
               <a href="https://github.com/succseth/jrscleaningservices" target="_blank" rel="noopener" class="project-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 0 .192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">JR's Home Cleaning</h3>
-          <p class="project-desc">
-            A professional business website for a home cleaning company. Features a
-            services overview, team section, and contact information with a clean,
-            trustworthy design.
-          </p>
-          <div class="project-tags">
-            <span class="p-tag">HTML</span>
-            <span class="p-tag">CSS</span>
-            <span class="p-tag">JavaScript</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-card-top">
-            <div class="project-icon-wrap">🧠</div>
-            <div class="project-links">
-              <a href="projects/quiz-app/index.html" target="_blank" rel="noopener" class="project-link" title="Live Demo">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="https://github.com/succseth" target="_blank" rel="noopener" class="project-link" title="GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               </a>
             </div>
           </div>
-          <h3 class="project-title">Quiz App</h3>
-          <p class="project-desc">
-            Interactive trivia game with selectable category, difficulty, and question count.
-            Features a live countdown timer, animated answer reveals, score tracking,
-            and a detailed results screen. Powered by the Open Trivia Database.
-          </p>
+          <div class="project-desc-wrap">
+            <p class="project-desc">Bold stacked headlines convey three core brand values in under two seconds. A blue-to-transparent gradient over the hero photograph keeps text legible while preserving the lifestyle imagery behind it.</p>
+            <div class="project-desc-more" hidden>
+              <p>The green WhatsApp button was intentionally styled to match WhatsApp's own brand color because South African home service businesses rely on WhatsApp as the primary booking channel, so it needed to feel instantly familiar to local users. Inter in a heavy weight was chosen for the hero headline to project confidence and reliability, two qualities a customer needs to feel before inviting a service team into their home. The Cape Town Table Mountain visible in the background anchors the brand geographically, building immediate credibility with local visitors. A sticky "Book Now" button in the navigation ensures the conversion path is always one click away regardless of scroll position.</p>
+            </div>
+            <button class="read-more-btn" aria-expanded="false">Read more</button>
+          </div>
           <div class="project-tags">
             <span class="p-tag">HTML</span>
             <span class="p-tag">CSS</span>
             <span class="p-tag">JavaScript</span>
-            <span class="p-tag">Open Trivia API</span>
           </div>
         </article>
 
@@ -261,27 +221,33 @@
         <h2 class="section-title">Contact Me</h2>
         <p class="section-subtitle">
           I'm actively looking for junior front-end opportunities. Whether you have a question,
-          a project idea, or just want to connect — my inbox is open.
+          a project idea, or just want to connect, my inbox is open.
         </p>
       </div>
       <div class="contact-layout">
         <div class="contact-info reveal">
           <a href="mailto:srdaniels0409@gmail.com" class="contact-item">
-            <span class="contact-item-icon">✉️</span>
+            <span class="contact-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </span>
             <div>
               <p class="contact-item-label">Email</p>
               <p class="contact-item-value">srdaniels0409@gmail.com</p>
             </div>
           </a>
           <a href="https://linkedin.com/in/succseth" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-item-icon">💼</span>
+            <span class="contact-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </span>
             <div>
               <p class="contact-item-label">LinkedIn</p>
               <p class="contact-item-value">linkedin.com/in/sethdaniels</p>
             </div>
           </a>
           <a href="https://github.com/succseth" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-item-icon">🐙</span>
+            <span class="contact-item-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </span>
             <div>
               <p class="contact-item-label">GitHub</p>
               <p class="contact-item-value">github.com/succseth</p>
