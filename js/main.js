@@ -67,3 +67,32 @@ function type() {
 }
 
 setTimeout(type, 1400);
+
+// ── SKILLS TABS (mobile) ──────────────────────────────────
+const skillsTabs = document.querySelectorAll('.skills-tab');
+const skillCards = document.querySelectorAll('.skill-card');
+
+function setActiveTab(index) {
+  skillsTabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+    tab.setAttribute('aria-selected', i === index);
+  });
+  skillCards.forEach((card, i) => {
+    const hidden = i !== index;
+    card.classList.toggle('tab-hidden', hidden);
+    if (!hidden) card.classList.add('visible');
+  });
+}
+
+function applyTabs() {
+  if (window.innerWidth <= 768) {
+    const active = Array.from(skillsTabs).findIndex(t => t.classList.contains('active'));
+    setActiveTab(active >= 0 ? active : 0);
+  } else {
+    skillCards.forEach(card => card.classList.remove('tab-hidden'));
+  }
+}
+
+skillsTabs.forEach((tab, i) => tab.addEventListener('click', () => setActiveTab(i)));
+window.addEventListener('resize', applyTabs, { passive: true });
+applyTabs();

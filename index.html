@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,39 +64,50 @@
         <span class="section-label">What I know</span>
         <h2 class="section-title">Skills &amp; Technologies</h2>
       </div>
+      <div class="skills-tabs" role="tablist" aria-label="Skill categories">
+        <button class="skills-tab active" role="tab" aria-selected="true" data-tab="0">Core Languages</button>
+        <button class="skills-tab" role="tab" aria-selected="false" data-tab="1">Tools &amp; Workflow</button>
+        <button class="skills-tab" role="tab" aria-selected="false" data-tab="2">Learning</button>
+      </div>
       <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-card-icon">💻</div>
+        <div class="skill-card reveal" data-tab-index="0">
+          <div class="skill-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
           <h3 class="skill-card-title">Core Languages</h3>
           <div class="skill-tags">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript ES6+</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skill-tag-logo" alt="">HTML5</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skill-tag-logo" alt="">CSS3</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skill-tag-logo" alt="">JavaScript ES6+</span>
             <span class="skill-tag">Responsive Design</span>
-            <span class="skill-tag">CSS Flexbox</span>
-            <span class="skill-tag">CSS Grid</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skill-tag-logo" alt="">CSS Flexbox</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skill-tag-logo" alt="">CSS Grid</span>
           </div>
         </div>
-        <div class="skill-card reveal">
-          <div class="skill-card-icon">🛠️</div>
+        <div class="skill-card reveal" data-tab-index="1">
+          <div class="skill-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
           <h3 class="skill-card-title">Tools &amp; Workflow</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Git &amp; GitHub</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">Chrome DevTools</span>
-            <span class="skill-tag">Figma</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skill-tag-logo" alt="">Git &amp; GitHub</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="skill-tag-logo" alt="">VS Code</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" class="skill-tag-logo" alt="">Chrome DevTools</span>
+            <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="skill-tag-logo" alt="">Figma</span>
             <span class="skill-tag">REST APIs</span>
             <span class="skill-tag">LocalStorage</span>
           </div>
         </div>
-        <div class="skill-card reveal">
-          <div class="skill-card-icon">📚</div>
+        <div class="skill-card reveal" data-tab-index="2">
+          <div class="skill-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
           <h3 class="skill-card-title">Currently Learning</h3>
           <div class="skill-tags">
-            <span class="skill-tag learning">React</span>
-            <span class="skill-tag learning">TypeScript</span>
-            <span class="skill-tag learning">Angular</span>
-            <span class="skill-tag learning">Tailwind CSS</span>
+            <span class="skill-tag learning"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="skill-tag-logo" alt="">React</span>
+            <span class="skill-tag learning"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="skill-tag-logo" alt="">TypeScript</span>
+            <span class="skill-tag learning"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" class="skill-tag-logo" alt="">Angular</span>
+            <span class="skill-tag learning"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="skill-tag-logo" alt="">Tailwind CSS</span>
           </div>
         </div>
       </div>

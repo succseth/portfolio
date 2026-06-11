@@ -425,8 +425,8 @@ img { display: block; max-width: 100%; }
 }
 
 .skill-card-icon {
-  font-size: 2rem;
   margin-bottom: 16px;
+  line-height: 1;
 }
 
 .skill-card-title {
@@ -443,6 +443,9 @@ img { display: block; max-width: 100%; }
 }
 
 .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.78rem;
   font-family: 'Fira Code', monospace;
   padding: 5px 12px;
@@ -451,6 +454,13 @@ img { display: block; max-width: 100%; }
   border: 1px solid var(--border);
   color: var(--text-muted);
   transition: all 0.2s;
+}
+
+.skill-tag-logo {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .skill-tag:hover {
@@ -462,6 +472,11 @@ img { display: block; max-width: 100%; }
   border-color: rgba(0, 229, 255, 0.25);
   color: var(--cyan);
   background: rgba(0, 229, 255, 0.06);
+}
+
+/* ── SKILLS TABS (mobile only) ─────────────────────────── */
+.skills-tabs {
+  display: none;
 }
 
 /* ── PROJECTS ──────────────────────────────────────────── */
@@ -710,6 +725,42 @@ img { display: block; max-width: 100%; }
   .hero-cta { flex-direction: column; align-items: center; }
 
   .projects-grid { grid-template-columns: 1fr; }
+
+  .skills-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .skills-tab {
+    flex: 1;
+    padding: 10px 6px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+
+  .skills-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .skills-tab:hover:not(.active) {
+    color: var(--text);
+  }
+
+  .skill-card.tab-hidden {
+    display: none;
+  }
 
   .skills-grid { grid-template-columns: 1fr; }
 
